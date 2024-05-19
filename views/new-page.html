@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Groups</title>
+<style>
+    .button{
+        padding: 5px;
+        border: none;
+        border-radius: 8px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .button-container button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .create-button {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .edit-button {
+        background-color: #008CBA;
+        color: white;
+    }
+    .delete-button {
+        background-color: #f44336;
+        color: white;
+    }
+    .manage-students-button {
+        background-color: #FF9800;
+        color: white;
+    }
+    .create-seance-button {
+        background-color: #673AB7;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<h2>Groups</h2>
+
+<div class="button-container">
+    <button class="create-button" onclick="showCreateForm()">Create Group</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Matiere</th>
+            <th>Formateur</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="groupTableBody">
+        <!-- Group data will be inserted here dynamically -->
+    </tbody>
+</table>
+
+<!-- Create Group Form -->
+<div id="createForm" style="display: none;">
+    <h3>Create Group</h3>
+    <form id="groupForm" onsubmit="createGroup(event)">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="matiere">Matiere:</label>
+        <input type="text" id="matiere" name="matiere" required><br><br>
+        <label for="formateur">Formateur:</label>
+        <select id="formateur" name="formateur" required>
+            <!-- Formateurs will be inserted here dynamically -->
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    // Fetch groups data
+    async function fetchGroups() {
+        try {
+            const response = await fetch('http://localhost:3000/group');
+            const groups = await response.json();
+            return groups;
+        } catch (error) {
+            console.error('Error fetching groups:', error);
+            return [];
+        }
+    }
+
+    // Fetch formateurs data
+    async function fetchFormateurs() {
+        try {
+            const response = await fetch('http://localhost:3000/formateur');
+            const formateurs = await response.json();
+            console.log(formateurs)
+            return formateurs;
+        } catch (error) {
+            console.error('Error fetching formateurs:', error);
+            return [];
+        }
+    }
+
+    // Display groups when the page loads
+    document.addEventListener('DOMContentLoaded', async () => {
+        const groups = await fetchGroups();
+        const formateurs = await fetchFormateurs();
+        displayGroups(groups);
+        displayFormateurs(formateurs);
+    });
+
+    function displayGroups(groups) {
+        const groupTableBody = document.getElementById('groupTableBody');
+        groupTableBody.innerHTML = '';
+
+        groups.forEach(group => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${group.nom}</td>
+                <td>${group.matiere}</td>
+                <td>${group.formateur.nom+' '+group.formateur.prenom}</td>
+                <td>
+                    <button class="button edit-button" onclick="editGroup('${group.nom}')">Edit</button>
+                    <button class="button delete-button" onclick="deleteGroup('${group.nom}')">Delete</button>
+                    <button class="button manage-students-button" onclick="manageStudents('${group.nom}')">Manage Students</button>
+                    <button class="button create-seance-button" onclick="createSeance('${group.nom}')">Create Seance</button>
+                </td>
+            `;
+            groupTableBody.appendChild(row);
+        });
+    }
+
+    function displayFormateurs(formateurs) {
+        const formateurSelect = document.getElementById('formateur');
+        formateurSelect.innerHTML = '';
+
+        formateurs.forEach(formateur => {
+            const option = document.createElement('option');
+            option.textContent = formateur.nom+" "+formateur.prenom;
+            formateurSelect.appendChild(option);
+        });
+    }
+
+    function showCreateForm() {
+        const createForm = document.getElementById('createForm');
+        createForm.style.display = 'block';
+    }
+
+    async function createGroup(event) {
+        event.preventDefault();
+        
+        const form = document.getElementById('groupForm');
+        const formData = new FormData(form);
+        console.log(formData)
+        const data = {};
+        for (const [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+        console.log(data)
+        try {
+            const response = await fetch('http://localhost:3000/group', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            if (response.ok) {
+                const groups = await fetchGroups();
+                displayGroups(groups);
+                const createForm = document.getElementById('createForm');
+                createForm.style.display = 'none';
+            } else {
+                console.error('Failed to create group');
+            }
+        } catch (error) {
+            console.error('Error creating group:', error);
+        }
+    }
+
+    function editGroup(nom) {
+        console.log(`Editing group ${nom}`);
+        // Implement logic to edit group
+    }
+
+    function deleteGroup(nom) {
+        console.log(`Deleting group ${nom}`);
+        // Implement logic to delete group
+    }
+
+    function manageStudents(nom) {
+        console.log(`Managing students for group ${nom}`);
+        // Implement logic to manage students for group
+    }
+
+    function createSeance(nom) {
+        console.log(`Creating seance for group ${nom}`);
+        // Implement logic to create seance for group
+    }
+</script>
+
+</body>
+</html>

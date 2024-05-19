@@ -1,0 +1,10 @@
+const express = require("express")
+const router = express.Router() 
+const {getAllsaissons ,deleteSaisson, createSaisson} = require("../../controllers/saissonsControllers")
+router.route("/")
+      .get(getAllsaissons)
+router.route("/addsaisson") 
+      .post(createSaisson)     
+router.route("/deletesaisson/:className")
+       .delete(deleteSaisson)
+      module.exports = router

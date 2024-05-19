@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Data in Table</title>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .container{
+        width: 700px;
+        margin: 50px;
+    }
+    .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: white;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-container button:hover {
+    opacity: 0.8;
+}
+
+/* Add styles for cancel button */
+.form-container .cancel {
+    background-color: #f44336;
+}
+    .notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    z-index: 1;
+}
+    .delete_button{
+        background-color: rgb(254, 72, 72);
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .delete_button:hover{
+        background-color: red;
+    }
+    .edit_button{
+        background-color: rgb(221, 221, 221);
+        color: black;
+        font-weight: bold;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .edit_button:hover{
+       background-color: gray;
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+    .title-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ajouter-salle-button{
+        background-color:rgb(52, 52, 102);
+        color : rgb(228, 173, 23);
+        padding: 10px;
+        border:none;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .ajouter-salle-button:hover{
+        background-color: rgb(21, 21, 87)
+    }
+</style>
+</head>
+<body><div class ="container">
+<div class="title-button">
+<h2>Salle Data</h2>
+<button class="ajouter-salle-button" onclick="openForm()">Ajouter une salle</button>
+<img src="../school-logo.jpg" class="h-8 me-3" alt="FlowBite Logo" />
+</div>
+<table id="salleTable">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Capacité</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be inserted here dynamically -->
+    </tbody>
+</table>
+<div id="notification" class="notification">
+    Deleting item is done!
+</div>
+<div id="addRoomForm" class="form-popup">
+    <form id="roomForm" class="form-container">
+        <label for="nom"><b>Nom</b></label>
+        <input type="text" placeholder="Enter Nom" name="nom" required>
+
+        <label for="capacite"><b>Capacité</b></label>
+        <input type="number" placeholder="Enter Capacité" name="capacite" required>
+
+        <label for="description"><b>Description</b></label>
+        <input type="text" placeholder="Enter Description" name="description" required>
+
+        <button type="button" onclick="addRoom()">Ajouter</button>
+        <button type="button" onclick="closeForm()">Annuler</button>
+    </form>
+</div>
+<div id="editRoomForm"   class="form-popup">
+    <form id="editRoomFormContainer" class="form-container">
+        <label for="nom"><b>Nom</b></label>
+        <input type="text" placeholder="Enter Nom" id="nom" name="nom" required>
+
+        <label for="capacite"><b>Capacité</b></label>
+        <input type="number" placeholder="Enter Capacité" id="capacite" name="capacite" required>
+
+        <label for="description"><b>Description</b></label>
+        <input type="text" placeholder="Enter Description" id="description" name="description" required>
+
+        <button type="button" id="edit_submit">Modifier</button>
+        <button type="button" onclick="closeEditForm()">Annuler</button>
+    </form>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', fetchData);
+    
+    async function fetchData() {
+        try {
+            const response = await fetch('http://localhost:3000/salle');
+            const data = await response.json();
+            displayData(data);
+            
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+
+    function displayData(data) {
+        const tableBody = document.querySelector('#salleTable tbody');
+        tableBody.innerHTML = '';
+
+        data.forEach((item) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.nom}</td>
+                <td>${item.capacite}</td>
+                <td>${item.description}</td>
+                <td><button onclick="deleteItem('${item._id}')" class="delete_button">Delete</button>
+                    
+                    <button onclick="openEditForm('${item._id}')" class="edit_button">Edit</button></td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    async function deleteItem(id) {
+        try {
+            const response = await fetch(`http://localhost:3000/salle/${id}`, {
+                method: 'DELETE'
+            });
+            if (response.ok) {
+                console.log("operation completed")
+                fetchData(); // Refresh table after successful deletion
+                showNotification()
+            } else {
+                console.error('Failed to delete item');
+            }
+        } catch (error) {
+            console.error('Error deleting item:', error);
+        }
+    }
+    function openForm() {
+    document.getElementById("addRoomForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("addRoomForm").style.display = "none";
+}
+
+async function addRoom() {
+    const form = document.getElementById('roomForm');
+    const formData = new FormData(form);
+    const data = {};
+    for (const [key, value] of formData.entries()) {
+        data[key] = value;
+    }
+    try {
+        const response = await fetch('http://localhost:3000/salle', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        if (response.ok) {
+            // Refresh table after successful addition
+            fetchData();
+            closeForm(); // Close form after successful addition
+        } else {
+            const status = response.status
+            switch (status) {
+                case 409:
+                    alert("la salle est deja exist")
+                    fetchData();
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+    } catch (error) {
+        console.error('Error adding room:', error);
+    }  
+}
+async function openEditForm(id) {
+        try {
+            const response = await fetch(`http://localhost:3000/salle/${id}`);
+            const data = await response.json();
+           
+          document.getElementById('nom').value = data.nom;
+           document.getElementById('capacite').value = data.capacite;
+            document.getElementById('description').value = data.description;
+            document.getElementById("editRoomForm").style.display = "block";
+            document.getElementById('edit_submit').onclick = () => updateSalle(id)
+            
+        } catch (error) {
+            console.error('Error fetching salle data for editing:', error);
+        }
+    }
+
+    async function updateSalle(id) {
+        const form = document.getElementById('editRoomFormContainer');
+        const formData = new FormData(form);
+    
+        const data = {};
+        for (const [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+        console.log(data)
+        try {
+            const response = await fetch(`http://localhost:3000/salle/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            if (response.ok) {
+                fetchData(); // Refresh table after successful update
+                closeEditForm(); // Close edit form after successful update
+            } else {
+            
+            const status = response.status
+            switch (status) {
+                case 409:
+                    alert("la salle est deja exist")
+                    fetchData();
+                    break;
+            
+                default:
+                    break;
+            }
+            }
+        } catch (error) {
+            console.error('Error updating salle:', error);
+        }
+    }
+
+    function closeForm() {
+        document.getElementById("addRoomForm").style.display = "none";
+    }
+
+    function closeEditForm() {
+        document.getElementById("editRoomForm").style.display = "none";
+    }
+    function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.style.display = 'block';
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 3000); // Hide notification after 3 seconds
+}
+
+    // Periodically fetch and update data every 5 seconds
+    
+</script>
+
+</body>
+</html>

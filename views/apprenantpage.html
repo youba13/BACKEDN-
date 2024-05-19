@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./output.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
+<title>Ajouter une formation de soutien</title>
+<style>
+    #paiements-div{
+        top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 1000;
+display: none;
+background-color: #00000073;
+justify-content: center;
+align-items: center;
+    }
+    .academybluetext{
+        color: #012B5B;
+    }
+   #hiddenUserInfo{
+    display: none;
+   }
+    /***** user info style *****/
+    .popupContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popupContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+#userInfo {
+  margin-bottom: 20px;
+}
+
+#groupList, #paymentList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#groupList li, #paymentList li {
+  margin-bottom: 5px;
+}
+    /**************************/
+    *::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+#data-container .data-table{
+    max-width: 900px;
+    max-height: 500px;
+   }
+    .title-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    .title-button h2{
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+    }
+    .school-color-blue{
+        background-color: #012B5B !important;
+        color: white !important;
+    }
+    .hover-link-aside:hover{
+        background-color: #EFBB2D !important;
+        color: #012B5B  !important;
+    }
+   #data-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 57px;
+        
+
+    }
+    /** apprenant form**/
+    #data-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+  #data-container .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+   #data-container h2 {
+        margin-bottom: 20px;
+    }
+
+   #data-container table {
+        width: 900px;
+        border-collapse: collapse;
+    }
+
+   #data-container th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+   #data-container th {
+    
+        background-color: #012B5B ;
+        color:#EFBB2D ;
+    
+    }
+
+   #data-container button {
+        padding: 8px 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+       
+        
+    }
+
+   #data-container .ajouter-button:hover {
+        background-color: #034692;
+        color: white;
+    }
+    #data-container .ajouter-button {
+        background-color: #023b7c;
+        color: #EFBB2D ;
+    }
+
+   #data-container button + button {
+        margin-left: 5px;
+    }
+
+   #data-container .form-popup {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid #f1f1f1;
+        background-color: white;
+        padding: 40px;
+        max-width: 500px;
+        z-index: 1000;
+        margin-top: 169px;  
+      
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .delete-button{
+        background-color: rgb(255, 59, 59);
+        color: white;
+    }
+    .delete-button:hover{
+        background-color: rgb(252, 17, 17);
+    }
+    .edit-button{
+        background-color: rgb(192, 192, 192);
+        color: black;
+    }
+    .edit-button:hover{
+        background-color: rgb(123, 123, 123);
+    }
+    .view-button{
+        background-color: rgb(65, 93, 255);
+        color: white;
+    }
+    .view-button:hover{
+        background-color: rgb(2, 64, 221);
+    }
+
+   #data-container  .form-container input[type=text],
+    .form-container input[type=date],
+    .form-container input[type=email],
+    .form-container input[type=number],
+    .form-container select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+   #data-container 
+
+   #data-container .form-container button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   #data-container .form-container{
+       height: 100%;
+    }
+
+   #data-container .form-container button:hover {
+        opacity: 0.8;
+    }
+
+   #data-container .form-container .cancel {
+        background-color: #f44336;
+    }
+    /********************/
+    .border-none{
+        border:none;
+    }
+    #data-container .title-button-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px ;
+    margin-top: 30px;
+    width: 100%;
+   }
+   #data-container .title-button-div button{
+    padding: 10px;
+    color: #EFBB2D;
+    background-color: #012B5B;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+   }
+   #data-container .title-button-div h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+   }
+    nav, aside{background-color: #012B5B ;}
+    
+</style>
+</head>
+<body>
+
+    
+
+    <nav class="border-none fixed top-0 z-50 w-full school-color-blue border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center justify-start rtl:justify-end">
+              <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-lg sm:hidden hover-link-aside focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                  <span class="sr-only">Open sidebar</span>
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                  </svg>
+               </button>
+              <a href="https://flowbite.com" class="flex ms-2 md:me-24">
+                <img src="/img/logo.png" class="h-8 me-3" alt="tatwir academy logo" />
+                <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Tatwir Academy</span>
+              </a>
+            </div>
+            <div class="flex items-center">
+                <div class="flex items-center ms-3">
+                  <div>
+                    <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                      <span class="sr-only">Open user menu</span>
+                      <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                    </button>
+                  </div>
+                  <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
+                    <div class="px-4 py-3" role="none">
+                      <p class="text-sm text-white dark:text-white" role="none">
+                        Neil Sims 
+                      </p>
+                      <p class="text-sm font-medium text-white truncate dark:text-gray-300" role="none">
+                        neil.sims@flowbite.com
+                      </p>
+                    </div>
+                    <ul class="py-1" role="none">
+                      <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover-link-aside dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <!--PAIMENTS DIV-->
+<div id="paiements-div">
+<div style="
+border-radius: 8px;
+width: 800px;
+height: auto;
+overflow-y: auto;
+background-color: white;
+">
+<div style="
+display: flex;
+justify-content: space-between;
+padding: 20px;
+align-items: center;
+">
+<h1 style="
+font-size: 21px;
+font-weight: bold;
+">Paiements:</h1>
+ <button style="
+background-color: #0c0c67;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+"
+>Ajouter Paiement</button>
+<button style="
+background-color: rgb(220, 45, 45);
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+" onclick="hidepaiement()"
+>Annuler</button>
+</div>
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="
+max-height: 350px;
+overflow: auto;
+">
+<table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" style="
+max-height: 400px;
+overflow: auto;
+">
+
+<thead  class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <tr>
+        <th scope="col" class="px-6 py-3">
+           Group
+        </th>
+        <th scope="col" class="px-6 py-3">
+            Date
+        </th>
+        <th scope="col" class="px-6 py-3">
+            Montant
+        </th>
+        <th scope="col" class="px-6 py-3">
+            Notes
+        </th>
+        <th scope="col" class="px-6 py-3">
+            Action
+        </th>
+        
+    </tr>
+</thead>
+<tbody id="paiements-div-tbody" >
+      
+</tbody>
+</table>
+</div>  
+</div>
+</div>
+<!--            -->
+      
+      <aside id="logo-sidebar" class=" border-none fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full school-color-blue border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto school-color-blue dark:bg-gray-800">
+           <ul class="space-y-2 font-medium">
+               <li>
+                  <a href="./apprenantpage.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                     <svg class="w-5 h-5 group-hover:text-gray-900 text-white transition duration-75 dark:text-gray-400 hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                        <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                    </svg>
+                     <span class="ms-3">Apprenants</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="http://localhost:3500/formateurpagee.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-5 h-5 group-hover:text-gray-900 text-white transition duration-75 dark:text-gray-400 hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                        <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                    </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Formateurs</span>
+    
+                  </a>
+               </li>
+               <li>
+                <button type="button" class="flex items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group hover-link-aside dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M10 2a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v2.382l1.447.723.005.003.027.013.12.056c.108.05.272.123.486.212.429.177 1.056.416 1.834.655C7.481 13.524 9.63 14 12 14c2.372 0 4.52-.475 6.08-.956.78-.24 1.406-.478 1.835-.655a14.028 14.028 0 0 0 .606-.268l.027-.013.005-.002L22 11.381V9a3 3 0 0 0-3-3h-2V5a3 3 0 0 0-3-3h-4Zm5 4V5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1h6Zm6.447 7.894.553-.276V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-5.382l.553.276.002.002.004.002.013.006.041.02.151.07c.13.06.318.144.557.242.478.198 1.163.46 2.01.72C7.019 15.476 9.37 16 12 16c2.628 0 4.98-.525 6.67-1.044a22.95 22.95 0 0 0 2.01-.72 15.994 15.994 0 0 0 .707-.312l.041-.02.013-.006.004-.002.001-.001-.431-.866.432.865ZM12 10a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z" clip-rule="evenodd"/>
+                      </svg>
+                      
+                      <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Formations</span>
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                      </svg>
+                </button>
+                <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                      <li>
+                         <a href="http://localhost:3500/formaticourdesoutienonpage" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover-link-aside dark:text-white dark:hover:bg-gray-700">Cours De Soutien</a>
+                      </li>
+                      <li>
+                         <a href="http://localhost:3500/formaticourdesoutienonpage" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover-link-aside dark:text-white dark:hover:bg-gray-700">Formation Pratique</a>
+                      </li>
+                      <li>
+                         <a href="http://localhost:3500/formaticourdesoutienonpage" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover-link-aside dark:text-white dark:hover:bg-gray-700">Formation De Langue</a>
+                      </li>
+                </ul>
+             </li>
+               <li>
+                  <a href="http://localhost:3500/groups.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                     <svg class="flex-shrink-0 w-5 h-5 text-white group-hover:text-gray-900 transition duration-75 dark:text-gray-400 hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                        <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Groups</span>
+                  </a>
+               </li>
+               <li>
+                <a href="http://localhost:3500/groups.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                   <svg class="flex-shrink-0 w-5 h-5 text-white group-hover:text-gray-900 transition duration-75 dark:text-gray-400 hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                      <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                   </svg>
+                   <span class="flex-1 ms-3 whitespace-nowrap">Chat Rooms</span>
+                </a>
+             </li>
+             <li>
+                <a href="http://localhost:3500/groups.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                   <svg class="flex-shrink-0 w-5 h-5 text-white group-hover:text-gray-900 transition duration-75 dark:text-gray-400 hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                      <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                   </svg>
+                   <span class="flex-1 ms-3 whitespace-nowrap">PDFs</span>
+                </a>
+             </li>
+               <li>
+                  <a href="http://localhost:3500/salles.html" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h12M6 4v16M6 4H5m13 0v16m0-16h1m-1 16H6m12 0h1M6 20H5M9 7h1v1H9V7Zm5 0h1v1h-1V7Zm-5 4h1v1H9v-1Zm5 0h1v1h-1v-1Zm-3 4h2a1 1 0 0 1 1 1v4h-4v-4a1 1 0 0 1 1-1Z"/>
+                      </svg>
+                      
+                     <span class="flex-1 ms-3 whitespace-nowrap">Salles</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11 4.717c-2.286-.58-4.16-.756-7.045-.71A1.99 1.99 0 0 0 2 6v11c0 1.133.934 2.022 2.044 2.007 2.759-.038 4.5.16 6.956.791V4.717Zm2 15.081c2.456-.631 4.198-.829 6.956-.791A2.013 2.013 0 0 0 22 16.999V6a1.99 1.99 0 0 0-1.955-1.993c-2.885-.046-4.76.13-7.045.71v15.081Z" clip-rule="evenodd"/>
+                      </svg>
+                      
+                     <span class="flex-1 ms-3 whitespace-nowrap">Seances</span>
+                  </a>
+               </li>
+               <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6H5m2 3H5m2 3H5m2 3H5m2 3H5m11-1a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2M7 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm8 7a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+                      </svg>
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Inscriptions</span>
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
+                        <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"/>
+                    </svg>
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Demandes d'emploi</span>
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M18.458 3.11A1 1 0 0 1 19 4v16a1 1 0 0 1-1.581.814L12 16.944V7.056l5.419-3.87a1 1 0 0 1 1.039-.076ZM22 12c0 1.48-.804 2.773-2 3.465v-6.93c1.196.692 2 1.984 2 3.465ZM10 8H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6V8Zm0 9H5v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3Z" clip-rule="evenodd"/>
+                      </svg>
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Nouveautées</span>
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" clip-rule="evenodd"/>
+                      </svg>
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Emploi de Temps</span>
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"/>
+                      </svg>
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Paiements</span>
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover-link-aside dark:hover:bg-gray-700 group">
+                    <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M17 10v1.126c.367.095.714.24 1.032.428l.796-.797 1.415 1.415-.797.796c.188.318.333.665.428 1.032H21v2h-1.126c-.095.367-.24.714-.428 1.032l.797.796-1.415 1.415-.796-.797a3.979 3.979 0 0 1-1.032.428V20h-2v-1.126a3.977 3.977 0 0 1-1.032-.428l-.796.797-1.415-1.415.797-.796A3.975 3.975 0 0 1 12.126 16H11v-2h1.126c.095-.367.24-.714.428-1.032l-.797-.796 1.415-1.415.796.797A3.977 3.977 0 0 1 15 11.126V10h2Zm.406 3.578.016.016c.354.358.574.85.578 1.392v.028a2 2 0 0 1-3.409 1.406l-.01-.012a2 2 0 0 1 2.826-2.83ZM5 8a4 4 0 1 1 7.938.703 7.029 7.029 0 0 0-3.235 3.235A4 4 0 0 1 5 8Zm4.29 5H7a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h6.101A6.979 6.979 0 0 1 9 15c0-.695.101-1.366.29-2Z" clip-rule="evenodd"/>
+                      </svg>
+                      
+                      
+                   <span class="flex-1 ms-3 whitespace-nowrap">Admin</span>
+                </a>
+             </li>
+    
+            </ul>
+        </div>
+     </aside>
+      
+      <div id="data-container" class="p-4 sm:ml-64">
+        <div class="relative  pb-32 bg-lightBlue-500" style="
+    width: 100%;
+">
+          <div class="px-4 md:px-6 mx-auto w-full">
+             <div>
+                <div class="flex">
+                   
+                   
+                   
+                   <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                      <div class="relative flex flex-col min-w-0 break-words bg-white rounded-lg mb-6 xl:mb-0 shadow-lg">
+                         <div class="flex-auto p-4">
+                            <div class="flex flex-wrap">
+                               <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                                  <h5 class="text-blueGray-400 uppercase font-bold text-xs">Apprenants</h5>
+                                  <span class="font-bold text-xl">49,65%</span>
+                               </div>
+                               <div class="relative w-auto pl-4 flex-initial">
+                                  <div class="academybluetext p-3 text-center inline-flex items-center justify-center w-18 h-18 shadow-lg rounded-full bg-lightBlue-500"><svg class="w-8 h-8 group-hover:text-blue-900 text-black transition duration-75  hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                                    <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                                </svg></div>
+                               </div>
+                            </div>
+                            <p class="text-sm text-blueGray-500 mt-4"><span class="text-emerald-500 mr-2"><i class="fas fa-arrow-up"></i> 12%</span><span class="whitespace-nowrap">Since last month</span></p>
+                         </div>
+                         
+                      </div>
+                      
+                   </div>
+                   <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white rounded-lg mb-6 xl:mb-0 shadow-lg">
+                       <div class="flex-auto p-4">
+                          <div class="flex flex-wrap">
+                             <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                                <h5 class="text-blueGray-400 uppercase font-bold text-xs">Apprenants</h5>
+                                <span class="font-bold text-xl">49,65%</span>
+                             </div>
+                             <div class="relative w-auto pl-4 flex-initial">
+                                <div class="academybluetext p-3 text-center inline-flex items-center justify-center w-18 h-18 shadow-lg rounded-full bg-lightBlue-500"><svg class="w-8 h-8 group-hover:text-blue-900 text-black transition duration-75  hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                                  <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                              </svg></div>
+                             </div>
+                          </div>
+                          <p class="text-sm text-blueGray-500 mt-4"><span class="text-emerald-500 mr-2"><i class="fas fa-arrow-up"></i> 12%</span><span class="whitespace-nowrap">Since last month</span></p>
+                       </div>
+                       
+                    </div>
+                    
+                 </div>
+                 <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white rounded-lg mb-6 xl:mb-0 shadow-lg">
+                       <div class="flex-auto p-4">
+                          <div class="flex flex-wrap">
+                             <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                                <h5 class="text-blueGray-400 uppercase font-bold text-xs">Apprenants</h5>
+                                <span class="font-bold text-xl">49,65%</span>
+                             </div>
+                             <div class="relative w-auto pl-4 flex-initial">
+                                <div class="academybluetext p-3 text-center inline-flex items-center justify-center w-18 h-18 shadow-lg rounded-full bg-lightBlue-500"><svg class="w-8 h-8 group-hover:text-blue-900 text-black transition duration-75  hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                                  <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                              </svg></div>
+                             </div>
+                          </div>
+                          <p class="text-sm text-blueGray-500 mt-4"><span class="text-emerald-500 mr-2"><i class="fas fa-arrow-up"></i> 12%</span><span class="whitespace-nowrap">Since last month</span></p>
+                       </div>
+                       
+                    </div>
+                    
+                 </div><div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white rounded-lg mb-6 xl:mb-0 shadow-lg">
+                       <div class="flex-auto p-4">
+                          <div class="flex flex-wrap">
+                             <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                                <h5 class="text-blueGray-400 uppercase font-bold text-xs">Apprenants</h5>
+                                <span class="font-bold text-xl">49,65%</span>
+                             </div>
+                             <div class="relative w-auto pl-4 flex-initial">
+                                <div class="academybluetext p-3 text-center inline-flex items-center justify-center w-18 h-18 shadow-lg rounded-full bg-lightBlue-500"><svg class="w-8 h-8 group-hover:text-blue-900 text-black transition duration-75  hover-link-aside dark:hover-link-aside" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                                  <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                              </svg></div>
+                             </div>
+                          </div>
+                          <p class="text-sm text-blueGray-500 mt-4"><span class="text-emerald-500 mr-2"><i class="fas fa-arrow-up"></i> 12%</span><span class="whitespace-nowrap">Since last month</span></p>
+                       </div>
+                       
+                    </div>
+                    
+                 </div>
+                   
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+"><div id="hiddenUserInfo" class="bg-white max-w-2xl shadow overflow-hidden sm:rounded-lg" style="
+    margin-top: 63px;
+    width: 400px;
+    
+">
+    <div class="px-4 py-5 sm:px-6">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+            Apprenant
+        </h3>
+        <p class="mt-1 max-w-2xl text-sm text-gray-500">
+          informations :
+        </p>
+    </div>
+    <div id="user-info" class="border-t border-gray-200">
+        
+    </div>
+</div><div class="container">
+            <div class="title-button-div">
+                <h1>Les Apprenants</h1>
+                
+                <button type="button" onclick="openForm()">Ajouter Apprenant</button>
+              </div>
+              <div class=" data-table relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table id="apprenatdata" class="data-table w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        
+                        <th scope="col" class="px-6 py-3">
+                           nom
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            prenom
+                         </th>
+                        <th scope="col" class="px-6 py-3">
+                            niveau
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            année
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            numero de telephone
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                           email
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="#paiements-div-tbody">
+
+                </tbody>
+            </table>
+            </div>
+            
+            <div id="addApprenantForm" class="form-popup">
+                <form id="apprenantForm" class="form-container">
+                    <label for="nom"><b>Nom</b></label>
+                    <input id="nom" type="text" placeholder="Enter Nom" name="nom" required="">
+        
+                    <label for="prenom"><b>Prénom</b></label>
+                    <input id="prenom" type="text" placeholder="Enter Prénom" name="prenom" required="">
+        
+                    <label for="dateNaissance"><b>Date de Naissance</b></label>
+                    <input id="dateNaissance" type="date" name="dateNaissance" required="">
+        
+                    <label for="adress"><b>Adresse</b></label>
+                    <input id="adress" type="text" placeholder="Enter Adresse" name="adress" required="">
+                    <br>
+                    <label for="password"><b>password</b></label><br>
+                    <input id="password" type="password" placeholder="Enter password" name="password" required="true">
+                    <br><br>
+                    <label for="numTelephone"><b>Numéro de Téléphone</b></label>
+                    <input id="numTelephone" type="text" placeholder="Enter Numéro de Téléphone" name="numTelephone" required="">
+        
+                    <label for="email"><b>Email</b></label>
+                    <input id="email" type="email" placeholder="Enter Email" name="email" required="">
+        
+                    <label for="niveau"><b>Niveau</b></label>
+        <select name="niveau" required="">
+            <option id="niveau" value=""></option>
+            <option value="primaire">primaire</option>
+            <option value="Cem">Cem</option>
+            <option value="Lycce">Lycée</option>
+            <option value="universite">université</option>
+        </select>
+        <label for="filiere"><b>Filiere</b></label>
+        <select name="filiere">
+            <option id="filiere" value=""></option>
+            <option value="primaire">scientifique</option>
+            <option value="Cem">mathematique</option>
+            <option value="Lycce">Langues </option>
+            <option value="universite">Gestion</option>
+        </select>
+        <label for="annee"><b>Année</b></label>
+        <input id="annee" for="annee" name="annee" type="number" required="">
+                    <button type="submit">Ajouter</button>
+                    <button type="button" class="cancel" onclick="closeForm()">Annuler</button>
+                </form>
+            </div>
+        </div></div>
+         </div>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  // Get the form element
+  const form = document.getElementById('apprenantForm');
+  
+  // Reset the form fields when the DOM content is loaded
+  form.reset();
+});
+      document.addEventListener('DOMContentLoaded', fetchData);
+      document.getElementById('apprenantForm').addEventListener('submit', ajouterApprenant);
+      async function ajouterApprenant(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      
+    
+    // Get the form data
+       const form = document.getElementById('apprenantForm');
+       const formData = new FormData(form);
+       
+    // Convert FormData to a JSON object
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+    
+    // Make a POST request to the endpoint
+    try {
+        const response = await fetch('http://localhost:3500/apprenant', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+            // Handle success
+            console.log('Apprenant added successfully');
+            fetchData()
+            closeForm()
+            // Optionally, you can redirect the user to another page or show a success message
+        } else {
+            // Handle errors
+            console.error('Failed to add apprenant:', response.statusText);
+            // Optionally, you can display an error message to the user
+        }
+    } catch (error) {
+        console.error('Error adding apprenant:', error.message);
+        // Optionally, you can display an error message to the user
+    }
+}     
+  
+      async function fetchData() {
+          try {
+              const response = await fetch('http://localhost:3500/apprenant');
+              const data = await response.json();
+              
+              displayApprenants(data);
+          } catch (error) {
+              console.error('Error fetching apprenant data:', error);
+          }
+      }
+  
+      function displayApprenants(data) {
+          const tableBody = document.querySelector('#apprenatdata tbody');
+          tableBody.innerHTML = '';
+        
+          data.forEach((item) => {
+              const row = document.createElement('tr');
+              row.innerHTML = `
+            <td  class="px-6 py-4">
+                    ${item.nom}
+                </td>
+                <td  class="px-6 py-4">
+                ${item.prenom}
+                </td>
+                <td class="px-6 py-4">
+                    ${item.niveauAcademique.niveau}
+                </td>
+                <td class="px-6 py-4">
+                    ${item.niveauAcademique.annee}
+                </td>
+                <td class="px-6 py-4">
+                    ${item.numTelephone}
+                </td>
+                <td class="px-6 py-4">
+                    ${item.email}
+                </td>
+                <td class=" flex px-6 py-4">
+                    <button class="font-medium text-blue-600 dark:text-blue-500 hover:underline" onclick=editApprenantform('${item._id}')><svg class="w-6 h-6 text-blue-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd"/>
+</svg>
+</button>
+                    <button class="font-medium text-green-600 dark:text-red-500 hover:underline ms-3" onclick="viewInfo('${item._id}')"><svg class="w-6 h-6 text-green-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M4.998 7.78C6.729 6.345 9.198 5 12 5c2.802 0 5.27 1.345 7.002 2.78a12.713 12.713 0 0 1 2.096 2.183c.253.344.465.682.618.997.14.286.284.658.284 1.04s-.145.754-.284 1.04a6.6 6.6 0 0 1-.618.997 12.712 12.712 0 0 1-2.096 2.183C17.271 17.655 14.802 19 12 19c-2.802 0-5.27-1.345-7.002-2.78a12.712 12.712 0 0 1-2.096-2.183 6.6 6.6 0 0 1-.618-.997C2.144 12.754 2 12.382 2 12s.145-.754.284-1.04c.153-.315.365-.653.618-.997A12.714 12.714 0 0 1 4.998 7.78ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/>
+</svg>
+</button>
+                    <button class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3" onclick="deleteApprenant('${item._id}')"><svg class="w-6 h-6 text-red-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
+</svg>
+</button>
+                    <button class="font-medium text-gray-900 dark:text-red-500 hover:underline ms-3"" onclick="displayPaiement('${item._id}')"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"/>
+</svg>
+</button>
+                </td>
+            `;
+              tableBody.appendChild(row);
+          });
+      }
+      async function viewInfo(id) {
+          try {
+              const response = await fetch(`http://localhost:3500/apprenant/${id}`);
+              const data = await response.json();
+              console.log(data)
+              displayUserInfo(data)
+             
+             
+          } catch (error) {
+              console.error('Error fetching apprenant data:', error);
+          }
+      }
+      async function displayUserInfo(data){
+         
+         const tbody= document.getElementById("user-info")
+         tbody.innerHTML=`
+         <dl>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    NOM-PRENOM
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                   ${data.nom} ${data.prenom}
+                </dd>
+            </div>
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                   DATE-NAISSANCE
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  ${data.dateNaissance.split('T')[0]}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Email
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                   ${data.email}
+                </dd>
+            </div>
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    ADRESS
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    ${data.adress}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    DERIENERE PAIEMENT
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    ${data.paiements.length > 0 ?
+    `${data.paiements[data.paiements.length - 1].montant} DA le ${data.paiements[data.paiements.length - 1].date.split('T')[0]}` :
+    "No payments available"
+  }
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    GROUPS
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    ${data.groups.length > 0 ?
+    `${data.groups.join("/")}` :
+    "No groups available"
+  }
+                </dd>
+            </div>
+        </dl>
+         `
+         document.querySelector("#hiddenUserInfo").style.display="block";
+      }
+      async function deleteApprenant(id) {
+          try {
+              const response = await fetch(`http://localhost:3500/apprenant/${id}`, {
+                  method: 'DELETE'
+              });
+              if (response.ok) {
+                  fetchData(); // Refresh table after successful deletion
+              } else {
+                  console.error('Failed to delete apprenant');
+              }
+          } catch (error) {
+              console.error('Error deleting apprenant:', error);
+          }
+      }
+      async function getApprenant(id) {
+          try {
+              const response = await fetch(`http://localhost:3500/apprenant/${id}`);
+              const data = await response.json();
+             
+             return data
+             
+          } catch (error) {
+              console.error('Error fetching apprenant data:', error);
+          }
+      }
+      async function editApprenantform(id) {
+        try {
+           
+            const data  = await getApprenant(id)
+            console.log(data)
+            document.getElementById('nom').value = data.nom;
+            document.getElementById('prenom').value = data.prenom;
+            document.getElementById('dateNaissance').value = data.dateNaissance;
+            document.getElementById('adress').value = data.adress;
+            document.getElementById('email').value = data.capacite;
+            document.getElementById('niveau').value = data.niveauAcademique.niveau;
+            document.getElementById("filiere").value =data.niveauAcademique.filiere
+            document.getElementById("annee").value =data.niveauAcademique.annee
+         
+            openForm();
+            
+        } catch (error) {
+            console.error('Error editng apprenznt:', error);
+        }
+      }
+  
+      function viewApprenantInfo(id) {
+          // Redirect to the info page with the apprenant ID
+          window.location.href = `http://localhost:3500/apprenant/info/${id}`;
+      }
+  
+      function openForm() {
+          document.getElementById("addApprenantForm").style.display = "block";
+          const form = document.getElementById('apprenantForm');
+  
+  // Reset the form fields when the DOM content is loaded
+  form.reset();
+      }
+  
+      function closeForm() {
+        const form = document.getElementById('apprenantForm');
+        form.reset
+          document.getElementById("addApprenantForm").style.display = "none";
+      }
+      function openEditForm() {
+          document.getElementById("addApprenantForm").style.display = "block";
+      }
+  
+      function closeeditForm() {
+          document.getElementById("addApprenantForm").style.display = "none";
+      }
+  
+     
+      /****** user paiements logic ****************/
+      function hidepaiement(){
+        document.getElementById("paiements-div").style.display="none"
+      }
+      
+      async function displayPaiement(id){
+         const data = await getApprenant(id)
+         console.log(data)
+         const bodyelement = document.getElementById("paiements-div-tbody")
+         bodyelement.innerHTML="";
+         data.paiements.forEach((item)=>{
+            const tr = document.createElement("tr")
+            
+           tr.innerHTML =`
+        <th scope="col" class="px-6 py-3">
+          ${item.group}
+        </th>
+        <th scope="col" class="px-6 py-3">
+            ${item.date}
+        </th>
+        <th scope="col" class="px-6 py-3">
+            ${item.montant}DA
+        </th>
+        <th scope="col" class="px-6 py-3">
+            ${item.notes}
+        </th>
+        <th scope="col" class="px-6 py-3">
+            <button class="text-red-800">delete</button>
+        </th>
+    `;
+       bodyelement.appendChild(tr)
+         })
+
+        document.getElementById("paiements-div").style.display="flex"
+      }
+      /**************************************/
+  </script>
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+     
+      
+</body>
+</html>

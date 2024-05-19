@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seance Table</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .view-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .view-button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<h2>Seance Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Group</th>
+            <th>Formateur</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="seanceTableBody">
+        <!-- Seance data will be inserted here dynamically -->
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fetch and display seance data when the page loads
+        fetchSeanceData();
+    });
+
+    async function fetchSeanceData() {
+        try {
+            const response = await fetch('http://localhost:3000/seance');
+            const seanceData = await response.json();
+            displaySeanceData(seanceData);
+            console.log(seanceData)
+        } catch (error) {
+            console.error('Error fetching seance data:', error);
+        }
+    }
+
+    function displaySeanceData(seanceData) {
+        const seanceTableBody = document.getElementById('seanceTableBody');
+        seanceTableBody.innerHTML = '';
+
+        seanceData.forEach(seance => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${seance.date}</td>
+                <td>${seance.group.nom}</td>
+                <td>${seance.formateur.nom+' '+seance.formateur.prenom}</td>
+                <td><button class="view-button" onclick="viewSeanceInfo('${seance._id}')">Voir Infos</button></td>
+            `;
+            seanceTableBody.appendChild(row);
+        });
+    }
+
+    function viewSeanceInfo(seanceId) {
+        // Implement logic to view detailed information of the seance with the given ID
+        // For example, you can redirect to a new page or display a modal with more information
+        console.log(`Viewing detailed information of seance with ID: ${seanceId}`);
+    }
+</script>
+
+</body>
+</html>

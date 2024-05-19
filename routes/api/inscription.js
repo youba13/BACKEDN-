@@ -1,0 +1,11 @@
+const express = require("express")
+const router = express.Router()
+const { getIscriptions,supprimerInscription, comfirmInscription, inscrirAuFormation } = require("../../controllers/inscriptionFormation")
+router.route("/")
+    .post(inscrirAuFormation)
+    .get(getIscriptions)
+router.route("/:id")  
+      .delete(supprimerInscription)
+router.route("/comfirmerinscription")
+    .post(comfirmInscription)
+module.exports = router 

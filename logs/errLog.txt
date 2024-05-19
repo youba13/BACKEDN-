@@ -1,0 +1,512 @@
+20240131	03:27:07	b88583d0-62ba-4668-bcae-92a1ad940a77	ReferenceError: path is not defined
+20240131	03:27:07	11706d42-f98d-4d4b-a7f7-3f2443e350ec	ReferenceError: path is not defined
+20240201	01:00:33	b51e2d57-5874-425a-a7c8-a5e32bb1ce94	TypeError: res.send is not a function
+20240201	01:00:33	29cda86a-3c19-4e0a-a1f1-54f8c2c75e22	TypeError: res.send is not a function
+20240201	01:02:13	161a9e3f-9447-44dc-81d8-067a156510d1	TypeError: res.send is not a function
+20240201	01:02:13	f5daa2b9-0cce-478f-b903-3d0e02fd78d4	TypeError: res.send is not a function
+20240201	01:02:32	99599ba8-342d-4204-b3ea-c2595969c385	ReferenceError: path is not defined
+20240201	01:02:32	e452d3f8-cc13-4f64-8363-0328f7715ec5	ReferenceError: path is not defined
+20240201	01:02:32	e0f3ec57-eddc-4bcb-88df-7ff2d5cc3c02	ReferenceError: path is not defined
+20240201	01:03:28	6eb12378-3a98-44c1-a3d6-afa70c6a901c	ReferenceError: path is not defined
+20240201	01:03:28	694b9be5-2b1f-441b-bf06-a6ee18feb5fd	ReferenceError: path is not defined
+20240201	01:03:30	c228c920-4d2f-4a56-9096-6bd6d5f30572	ReferenceError: path is not defined
+20240201	01:03:30	9fa0ef75-b815-42a9-bead-8a9a7a26b110	ReferenceError: path is not defined
+20240201	01:03:30	0870a796-0fb7-4ad0-95e9-fd75738bfec9	ReferenceError: path is not defined
+20240201	01:03:31	5e0458fe-fc01-4c3e-845f-f15a1586a294	ReferenceError: path is not defined
+20240201	01:03:31	009eeba8-33dc-4279-b060-5610c6a6ad2a	ReferenceError: path is not defined
+20240201	01:03:31	3a002b76-8f0c-4a3d-835c-5369f895ee19	ReferenceError: path is not defined
+20240201	01:03:31	b2c6529a-8743-495f-b1db-1ea9807c4caf	ReferenceError: path is not defined
+20240201	01:03:31	cfc10290-bec0-43da-a183-30c952d210e7	ReferenceError: path is not defined
+20240201	01:07:09	a2fb670b-8251-46ae-814e-850d917d8038	ReferenceError: path is not defined
+20240201	01:07:09	329cbe03-d353-4f3c-bff9-35802174c0fc	ReferenceError: path is not defined
+20240201	01:07:13	bfd69876-95d1-4079-9a86-7e8b1f14e808	ReferenceError: path is not defined
+20240201	01:07:13	0006b6da-7216-463b-b929-4fbb20cf95d4	ReferenceError: path is not defined
+20240201	01:07:13	6579adc8-4b09-40a4-aa29-e8ad67a6e0cb	ReferenceError: path is not defined
+20240201	01:07:14	38cb0734-0265-4a00-8d04-9eddce5a7b8a	ReferenceError: path is not defined
+20240201	01:07:53	fc724bd9-aead-42c1-8146-fa0234c4b0d5	ReferenceError: path is not defined
+20240201	01:07:53	7952a54c-f97b-4d6f-9809-a78f9ee7173f	ReferenceError: path is not defined
+20240201	01:07:56	2d586a37-0911-4a00-b3d9-43f9094cfeec	ReferenceError: path is not defined
+20240201	01:07:56	58f2997a-e77b-42bb-998b-2af6531f9801	ReferenceError: path is not defined
+20240201	01:09:28	9a523056-5318-4ea0-a633-3d2b95b3f533	TypeError: res.send is not a function
+20240201	01:09:28	9c831bc8-8594-441e-aa6e-59f8db78d746	TypeError: res.send is not a function
+20240201	01:15:11	8925b5b7-e158-432d-97dd-1f26e6825b6a	ReferenceError: path is not defined
+20240201	01:15:11	dea56271-c6cf-4f2d-81e2-95da62a0aec3	ReferenceError: path is not defined
+20240201	01:16:09	8b5adfa6-a52f-408a-b2f5-3d4963bafc8e	ReferenceError: path is not defined
+20240201	01:16:09	e8c63b8f-a79f-4202-acd4-92b7c492fe48	ReferenceError: path is not defined
+20240201	01:16:10	4a84ac58-9163-4750-8764-793e7e975ace	ReferenceError: path is not defined
+20240201	01:16:11	7bfa29c2-ab82-4bb1-a0f3-28e30a32152d	ReferenceError: path is not defined
+20240201	01:16:11	b396bf1a-46af-4ab9-86a0-b4364082bf56	ReferenceError: path is not defined
+20240201	01:16:11	53ea7097-28a0-4156-af92-9cb4bebeb847	ReferenceError: path is not defined
+20240201	01:16:11	6df01fcc-bac4-4f3f-a8f6-a0795c50771c	ReferenceError: path is not defined
+20240201	01:16:11	ca0864d2-2333-49d1-bc58-2e9eecdd94e2	ReferenceError: path is not defined
+20240201	01:16:11	18f4cbc2-a319-4f30-a841-0896229cc739	ReferenceError: path is not defined
+20240201	01:16:11	049fbf66-ca86-4c91-a60a-9da9b590b8b3	ReferenceError: path is not defined
+20240201	01:18:56	4da17c72-2e5b-41cb-9fdd-71bbe451a22b	TypeError: res.json is not a function
+20240201	01:18:56	3bef3f20-2e82-4297-bba8-30a753cc78a1	TypeError: res.json is not a function
+20240201	01:18:57	dca48fe5-18d9-407b-9bd0-563f08bccbb3	TypeError: res.json is not a function
+20240201	01:18:57	8d79e1ce-5b4d-459e-9730-80710adfbc7b	TypeError: res.json is not a function
+20240201	01:18:57	68d0c8e3-12a9-4008-89f1-098459438028	TypeError: res.json is not a function
+20240201	01:18:57	4289f635-fb0e-4d64-af87-86545995c3e2	TypeError: res.json is not a function
+20240201	01:18:57	5a409ce5-c3d3-405a-bdc2-3ca05ea0a794	TypeError: res.json is not a function
+20240201	01:18:57	a9308138-1b6f-4f6b-981a-bdaf72f7c871	TypeError: res.json is not a function
+20240201	01:18:58	a5c08d26-a5f8-47cd-b64f-a000865e279d	TypeError: res.json is not a function
+20240201	01:18:58	38c6a6b8-9956-4f74-a606-33b0de68415d	TypeError: res.json is not a function
+20240201	01:19:53	f386e031-cb08-43d3-bef4-2b1c07631a65	ReferenceError: path is not defined
+20240201	01:19:53	b4041e99-3a66-43ec-8dc1-3005769dc227	ReferenceError: path is not defined
+20240201	01:20:21	e288d2cf-1972-47fb-a6ad-91b58c3478d7	ReferenceError: path is not defined
+20240201	01:20:21	f1d50e6b-8614-478c-a41c-7e0719e49e0b	ReferenceError: path is not defined
+20240201	01:20:21	3c192711-ca83-4a11-9b43-7364dcbdb4fc	ReferenceError: path is not defined
+20240201	01:20:21	e4555696-5e65-448e-8fb8-27b865986bb4	ReferenceError: path is not defined
+20240201	01:20:21	2ec05c8d-2577-4341-b017-0c30b48ba855	ReferenceError: path is not defined
+20240201	01:20:22	64d41625-b19b-4adb-88e5-6ce05cf9ec64	ReferenceError: path is not defined
+20240201	01:20:22	884b0260-e5c1-4dd3-abe1-eb87eacb4c0c	ReferenceError: path is not defined
+20240201	01:20:22	67962288-2971-4246-a1b4-8cf222ec286a	ReferenceError: path is not defined
+20240201	01:20:22	7241548a-89d5-4937-a3d5-cebc84a43f40	ReferenceError: path is not defined
+20240201	01:20:22	15ed785d-7450-4fe8-93e8-c7d4fdf1722d	ReferenceError: path is not defined
+20240201	01:21:14	c74cd0c9-044d-4fe8-9493-ccb6718655a9	ReferenceError: path is not defined
+20240201	01:21:14	21ddc191-def1-4140-9e32-b25824172a9d	ReferenceError: path is not defined
+20240201	01:21:30	f112cc74-e923-46fd-8a90-47deb81c6d7e	ReferenceError: path is not defined
+20240201	01:21:30	a38ece8a-50f9-425c-92cf-b3e99e01918a	ReferenceError: path is not defined
+20240201	01:22:26	03210a96-7801-441b-9b96-7a99905aecad	ReferenceError: path is not defined
+20240201	01:22:26	2f34958b-ed02-41ac-abcd-37b76bc25250	ReferenceError: path is not defined
+20240201	01:22:26	87582fa2-690a-49de-a3d9-00b958afb1fd	ReferenceError: path is not defined
+20240201	01:22:26	e81ae10f-a131-4dd5-9c0a-8eec780fa5dc	ReferenceError: path is not defined
+20240201	01:22:27	b8ae273a-fd32-434f-a104-70576b8d0439	ReferenceError: path is not defined
+20240201	01:22:27	5ef2aefb-76e5-4bda-b0e4-51d0ffa67c72	ReferenceError: path is not defined
+20240201	01:22:30	55911fe1-97fe-444a-9523-97b26cd96e61	ReferenceError: path is not defined
+20240201	01:22:31	33105488-ee24-44c4-b940-0c666dedfce8	ReferenceError: path is not defined
+20240201	01:22:42	a8380833-efc5-4492-af0f-4c5b0499c815	ReferenceError: path is not defined
+20240201	01:22:42	fbae15ac-496e-403e-855d-d214b9f12d0a	ReferenceError: path is not defined
+20240201	01:24:30	5929f5e6-ee4e-4410-bf04-8a2644b60603	ReferenceError: path is not defined
+20240201	01:24:30	7a365461-5513-4c68-92a0-c7a4166fcae8	ReferenceError: path is not defined
+20240201	01:25:36	499ee472-5d79-4395-a908-899351a02d22	ReferenceError: path is not defined
+20240201	01:25:36	60385249-b8b4-44b2-a4da-09276d7c1446	ReferenceError: path is not defined
+20240201	01:25:37	83022aa1-09c8-46a2-acb0-2d011e3348e4	ReferenceError: path is not defined
+20240201	01:25:37	6961ef9d-d62b-40a0-900b-8bf393eae597	ReferenceError: path is not defined
+20240201	01:25:37	be5dd4d9-4c16-40fb-ad0d-e5df342d3c9e	ReferenceError: path is not defined
+20240201	01:25:37	2f0446c7-fb5f-4046-a9e8-2802e94528e5	ReferenceError: path is not defined
+20240201	01:25:37	990ddad4-7aae-478f-bc3d-3c2bce1be80e	ReferenceError: path is not defined
+20240201	01:25:37	cc11b88f-9497-48a4-8646-8217f20c161d	ReferenceError: path is not defined
+20240201	01:25:37	5ea78a77-3e1b-40d7-808a-0ccf1b797ffb	ReferenceError: path is not defined
+20240201	01:25:38	e0fe3cfb-fed0-4693-b4e8-a013e28aa040	ReferenceError: path is not defined
+20240201	01:25:38	1ead2a99-9d1b-423c-a111-1fae450a9f24	ReferenceError: path is not defined
+20240201	01:25:38	b245a7fb-48a4-4851-b8ad-1a7bef45c61e	ReferenceError: path is not defined
+20240201	01:25:39	b684f988-66a2-454f-8893-cab10cf94dd3	ReferenceError: path is not defined
+20240201	01:25:39	f62a16e8-a904-4d0c-9bf0-822d0a3575a6	ReferenceError: path is not defined
+20240201	01:25:39	ecf2e44b-4f3d-459b-a8d1-a0515ac5bdb7	ReferenceError: path is not defined
+20240201	01:25:39	3b7946dd-2768-435e-9f2e-ee4478281e51	ReferenceError: path is not defined
+20240201	01:25:39	0eb02fdd-b507-4419-bbfa-73232a329c41	ReferenceError: path is not defined
+20240201	01:25:39	17248875-3e3d-4bc6-9771-b2d7a48abad5	ReferenceError: path is not defined
+20240201	01:25:39	327c2d3b-918f-45e7-8899-951f662b0c95	ReferenceError: path is not defined
+20240201	01:25:39	ae2df919-1007-412f-8031-6729da62605e	ReferenceError: path is not defined
+20240201	01:25:39	7f84a420-0bcd-4e0e-9796-e33c4f2cef27	ReferenceError: path is not defined
+20240201	01:25:39	a3c16e25-b3a9-46dc-8e6c-3d746a589b70	ReferenceError: path is not defined
+20240201	01:25:39	b5d62023-af01-4af1-8401-7e26d4e7df27	ReferenceError: path is not defined
+20240201	01:25:39	d57ae732-f084-4d2f-9857-095a4ce6757b	ReferenceError: path is not defined
+20240201	19:30:20	e9d20e65-680a-4137-b5ec-9cc5f449f4b2	ReferenceError: consolelog is not defined
+20240202	15:42:19	8cf619f5-e4d5-451b-ab8a-89c419437937	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:42:57	dfecf4fe-f915-4b03-b439-80d7c922293b	TypeError: Cannot read properties of null (reading '1')
+20240202	15:42:59	74871509-ae6a-4dcd-b96e-b03de6af6377	TypeError: Cannot read properties of null (reading '1')
+20240202	15:42:59	ca6a401f-b55d-42b8-93a6-9f9c9d653c9a	TypeError: Cannot read properties of null (reading '1')
+20240202	15:42:59	38436665-c9bf-4849-8270-3506ef3307f9	TypeError: Cannot read properties of null (reading '1')
+20240202	15:43:01	cc16eecc-1c85-4e53-aaf3-89eafdd9fc1c	TypeError: Cannot read properties of null (reading '1')
+20240202	15:44:07	6d81db67-f89e-41a9-93bc-2432d5b83087	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:44:09	97651339-b9ac-4464-8569-0fae2cdc93cd	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:44:09	53004103-2341-4b42-ae4c-a7eb9140ead5	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:44:09	efeb9a22-a260-45a3-bf06-04f95d49215e	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:39	e8a84dc6-4cc2-41f1-aa8f-f543026b307c	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:40	97cbf93e-2c09-44a0-bb0d-84d2017e3c21	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:40	5940433c-a597-492a-87fa-72a8fcfce0cb	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:40	08f83345-5586-4a8b-86c3-880c79664b16	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:40	6116d61a-5d4a-42ee-b960-08dac63c2ae0	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:40	a46ea72d-b0e7-458b-878d-c87c3bf0890b	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:41	1a0d36ec-c631-4039-9ffe-2ea11765578c	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:45	181c66ec-ee99-4ece-aba6-14046de8fdc4	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:46	d2c9b2af-6872-4e6e-8032-ed31f8208819	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:46	4b14181b-6467-417c-a9e4-66b8519a5387	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:46	519588f6-78cf-427f-a20e-b0cf33db70b5	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:46	a3fb5f3e-edf5-4fce-94a9-7735d87f7b76	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:45:46	d56de594-7029-43d8-a90d-f9282d697026	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:46:12	8a6bc00f-a4c6-40d0-9030-6ce3c08f1436	RangeError: Invalid status code: 1
+20240202	15:46:14	e3d4cfb6-1175-494e-bd78-0396004c0fa8	RangeError: Invalid status code: 1
+20240202	15:46:14	dc69daff-8aed-4b77-a95b-259beaf1593f	RangeError: Invalid status code: 1
+20240202	15:46:15	ceb0b5b3-a6e4-48ae-a8e2-51a318ce2e34	RangeError: Invalid status code: 1
+20240202	15:46:15	061e7b51-dec5-4c9f-9a72-abb5b57836a1	RangeError: Invalid status code: 1
+20240202	15:46:15	e0e5a750-b199-40ec-ada0-4dd2e0b4fcc5	RangeError: Invalid status code: 1
+20240202	15:46:15	18ba812e-7fbc-415c-93a1-d91463811587	RangeError: Invalid status code: 1
+20240202	15:46:20	e886d5a1-1012-40d1-ba78-95c9effc62e3	RangeError: Invalid status code: 1
+20240202	15:46:21	c98fcdae-98a5-48f5-8f3e-def2065d5971	RangeError: Invalid status code: 1
+20240202	15:47:03	d5d8c80e-21a4-4835-8d9f-d4cb4d8c5fde	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:22	ccbebf52-3535-4692-b130-c2ca04f90f56	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:22	d4283705-15d5-4b0a-b74b-79726fd27814	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	d5fa1f08-70ec-49f4-b8c4-1347ada00056	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	73daec15-6afb-4c65-bad6-5b3802fb8a27	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	f69cb14f-ca28-445f-af3f-fb513f64cdd8	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	bbbad985-81d9-4d6a-a496-885acced96f8	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	59483c5e-a15e-49a2-8245-ae15ea2d108c	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:23	c763a5a6-4dbf-4791-87a4-29109705a96d	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:24	21394650-a33a-45b1-a289-e75bb18e2942	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:24	696ef8a4-19d3-4a6c-bf9e-9873c1c2515d	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:30	5676a46c-3e61-469f-917c-c17395e2ac17	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:30	e304dd70-f920-48d7-8530-a191bbec3036	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:31	90944484-bbe1-4c4e-b327-302c3335080d	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:31	7a2e21ef-4888-4230-bacd-e76b15d182b1	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:31	909cd5a3-9543-4941-ab31-069f721147d3	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:31	431a5baf-6368-460c-ac87-3128f669b0c9	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:32	fad4b50d-8b6f-4b97-b9a3-f9254346798e	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:49:33	25efa64d-8228-480d-8d3c-758a0c8af5aa	TypeError: Cannot read properties of undefined (reading 'id')
+20240202	15:50:12	03a83579-83f2-4468-b40e-6dbed37f3b2a	RangeError: Invalid status code: NaN
+20240202	15:50:14	1f0dbed8-6dc5-4057-ba26-9161c572f090	RangeError: Invalid status code: NaN
+20240202	15:57:24	89213ef5-b654-466f-bb7e-9f5b65b5a8fd	TypeError: data.employees is not a function
+20240202	15:57:27	029735a0-c0c1-4676-b3d8-15e383b2ad87	TypeError: data.employees is not a function
+20240202	15:59:15	3132125c-5f3c-469d-a09f-9f0d53e1c434	TypeError: data.employees is not a function
+20240202	16:55:59	5bcc424a-42bd-4cd5-9c7a-de84ba368d26	SyntaxError: Unexpected token : in JSON at position 29
+20240202	16:56:06	a071bd54-6b72-433b-ba56-3729c6f5c923	SyntaxError: Unexpected string in JSON at position 19
+20240202	23:05:37	bf5c6243-3074-4c0f-aecd-74c739825602	SyntaxError: Unexpected token } in JSON at position 24
+20240210	01:44:45	da3553bc-ab27-4406-a5e6-0c9ff1f7389e	Error: Not allowed by CORS
+20240210	01:44:53	63b698c6-538e-41dd-8ec9-9061d4cc2193	Error: Not allowed by CORS
+20240210	01:45:14	4542cc20-fb19-49c4-9fc6-1c23692572fb	Error: Not allowed by CORS
+20240211	12:14:25	fc4f933d-88d1-4bea-8a3f-a9835e4f1a55	SyntaxError: Unexpected string in JSON at position 16
+20240223	20:19:23	019662d4-49f8-4847-a84b-93fbfc7885da	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:19:23	f354a65c-5416-45cc-8b96-cf0918fe62a8	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:21:40	7c758cd1-1275-463c-a06d-7e99a424ba53	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:21:41	e11e30ad-8121-49a7-84da-219b6c872f6b	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:21:48	d11a774d-b209-44f4-ab52-b44ac1ad4e25	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:22:12	fee9bced-ac82-4042-9ba1-6790e4ef03fc	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:22:47	40d672ef-fa7c-4487-9a54-4c29bd659304	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:22:53	7f4c5351-fa27-412d-85c5-eb545b960c8b	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:24:24	598998e4-0e95-4e64-86be-c239c44e1d95	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240223	20:27:28	3808e64a-500f-497b-ace9-6eca6d38be24	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:17:38	04a3cc7d-9bb3-4756-85a8-7f836d25525b	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:18:25	d5e37d33-a3e7-4cca-a241-a9ff0e51dd6e	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:19:24	c1e23ca9-7b10-4426-8426-4823481381a0	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:19:25	91ce85a3-12bc-422d-bb3d-6a9bf9d1c423	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:19:26	46dac734-80e0-4402-8d69-ea5f906090f2	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:19:45	19755dae-1d3b-42b5-85fd-153f3a81da95	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240224	02:21:31	737f738d-7575-4f14-ae7b-e48f1da6d837	ReferenceError: jwt is not defined
+20240224	02:21:39	b779e6c7-93e8-4b71-af44-694e8a394e20	ReferenceError: jwt is not defined
+20240224	02:21:39	e1261a29-5678-47c3-9bba-34155ca69fb7	ReferenceError: jwt is not defined
+20240224	02:21:40	3ad91ad8-b06f-4476-b52e-bcfa5ea39ce2	ReferenceError: jwt is not defined
+20240224	02:21:40	f3d9c221-ecec-43c4-a806-8f6c30d91b39	ReferenceError: jwt is not defined
+20240224	02:22:14	265f3433-a728-4433-8436-a84523c167cc	ReferenceError: jwt is not defined
+20240224	02:22:15	5281f10b-fb09-4764-8bfa-3fd506ddf800	ReferenceError: jwt is not defined
+20240224	02:22:15	0e667a57-cb09-422a-bc27-d1d626379650	ReferenceError: jwt is not defined
+20240224	02:22:15	8b38d595-bc78-44ac-b447-6b574fafbaaa	ReferenceError: jwt is not defined
+20240224	02:22:16	c795a02f-fcbb-4888-b9ec-a799490ae8a8	ReferenceError: jwt is not defined
+20240224	02:22:56	307a5335-cd6b-414a-9f00-fa2d0f2f6f03	ReferenceError: jwt is not defined
+20240224	02:23:20	968efbda-7d62-4bd2-9031-ed8278fb4766	ReferenceError: jwt is not defined
+20240224	02:23:23	e5920607-1256-482d-91a8-bafd80502e9b	ReferenceError: jwt is not defined
+20240224	02:23:24	a3ef251e-c280-42b8-b296-b7b1569ea81d	ReferenceError: jwt is not defined
+20240224	02:23:35	664089b0-673f-4e57-96bf-78e4c9e20510	ReferenceError: jwt is not defined
+20240224	02:23:37	2b23b87f-fd08-414e-8c17-f2ddac7fd5f7	ReferenceError: jwt is not defined
+20240224	12:37:16	7dfbf754-db19-4e2c-8757-8db420ebc10f	SyntaxError: Unexpected token } in JSON at position 58
+20240224	12:38:18	cc9fc4db-ee09-4969-a01d-3174005eade4	ReferenceError: jwt is not defined
+20240224	12:38:23	e5327c21-f02a-4999-a28e-51b09236147d	ReferenceError: jwt is not defined
+20240224	12:38:23	8cf8ccd3-2c47-4b1e-a7ef-a78ad31e8570	ReferenceError: jwt is not defined
+20240224	12:38:23	97308874-b36f-4dd7-985d-a60b118082e3	ReferenceError: jwt is not defined
+20240224	12:38:24	82031526-997e-41ae-a064-10712fa314c7	ReferenceError: jwt is not defined
+20240224	12:38:24	9fb71931-03bd-45ae-bab3-b47a2af70f10	ReferenceError: jwt is not defined
+20240224	12:38:24	4a84e28b-4342-46f9-ae64-0313ed193728	ReferenceError: jwt is not defined
+20240224	12:39:43	0bc29d0e-6578-45bf-bb04-808cfc43c869	ReferenceError: jwt is not defined
+20240224	12:39:58	659bbd15-baf9-4e9c-b33d-dbada23cf9c6	ReferenceError: jwt is not defined
+20240224	12:39:59	b139c6ca-043c-4f4c-bc45-da6f442801ad	ReferenceError: jwt is not defined
+20240224	12:39:59	6aea397a-420f-4d9d-9178-75ac2c78abac	ReferenceError: jwt is not defined
+20240224	12:39:59	601f7749-2e5d-406a-8849-151b90005ab9	ReferenceError: jwt is not defined
+20240224	12:39:59	4020bc2b-3f1d-40ed-81af-80daccf41d00	ReferenceError: jwt is not defined
+20240224	12:40:25	ebd7913c-c67e-45a2-a420-3d86cad216d9	ReferenceError: tokenn is not defined
+20240224	12:40:46	845f8de8-62bf-41c6-8fbc-96e8c0e44a41	ReferenceError: tokenn is not defined
+20240224	12:40:46	9cbc466a-0ab4-4b01-9f66-a782f9c51add	ReferenceError: tokenn is not defined
+20240224	12:40:46	44f1e7f7-3843-4a22-b606-162f49754104	ReferenceError: tokenn is not defined
+20240224	12:40:58	a0cb7891-128e-4679-a6ed-5c6773809a59	ReferenceError: jwt is not defined
+20240224	12:41:12	577cd95f-4526-47a5-91c2-1ae1050a17df	ReferenceError: jwt is not defined
+20240224	13:31:19	7842d93b-1ef8-4999-8c1e-940ed97b1c54	ReferenceError: decode is not defined
+20240303	16:14:44	52820265-89d2-45ed-8421-164dc9169e11	TypeError: classSchema.validate is not a function
+20240303	16:16:44	54927c53-19ab-46a3-a0f9-f75c78a1ea28	TypeError: classSchema.validate is not a function
+20240303	16:16:45	414c7d65-f240-423b-8183-b6f6f85cd013	TypeError: classSchema.validate is not a function
+20240303	16:16:45	2f9eb27d-e34e-4e23-9b2e-f0fc5a91883f	TypeError: classSchema.validate is not a function
+20240303	16:16:46	4ca8e575-5bff-4e86-8c35-6f25cd3b37e1	TypeError: classSchema.validate is not a function
+20240303	16:18:29	1df30d31-8577-445e-a146-5de065c37923	TypeError: myClass.displayInfo is not a function
+20240303	16:18:31	d02c7738-0873-449d-9899-4319c5fdb641	TypeError: myClass.displayInfo is not a function
+20240303	16:31:30	f763174c-b532-40e9-8fea-29fa593e3db4	TypeError: classSchema.validate is not a function
+20240303	18:35:20	69f6bcdc-3fb9-4132-8025-7f9414abbc0b	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:34	df466877-e2b0-43b6-b468-b864511447c2	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:35	cd46be55-9591-4de0-ad9e-e05fafc054c1	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:40	c7d341d0-867f-4b81-8200-05dbfb2792f2	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:41	14ffeb35-274a-4e1a-ac93-529d826780fe	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:41	63790772-a1d1-40b5-be2d-999cdb319b5a	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:41	ebdb1b6b-30ea-47aa-8b7e-e5498a7b0867	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:41	34d0d9ae-3fb4-4494-a799-3af40de0a08d	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:35:41	b6ece466-848a-4bd0-a7c5-1bdbd403b6e0	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:37:12	62e4d38c-fb12-4a41-9ced-8f98c0f3993a	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:37:18	5a64ae52-8cd0-4f24-ae24-390cab5af0ea	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:38:15	c71c1564-4e2c-49cf-a251-b273d5346384	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:38:53	f5707bff-16b0-46b3-a785-8a12761b3267	TypeError: res.status is not a function
+20240303	18:38:56	280c8409-6243-4e01-be29-126e5daec1fb	TypeError: res.status is not a function
+20240303	18:39:20	4962928a-72df-45b2-8b15-8eb73f10b1e5	TypeError: res.send is not a function
+20240303	18:39:45	71fa3294-2991-4dc0-b34e-f864ed02bdb6	TypeError: res.JSON is not a function
+20240303	18:40:18	aff5c70f-1d64-4603-9a39-73baee5bd85e	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:40:32	8d7c4836-e9e7-4e37-a0fe-673fe3da0287	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:40:33	871f41d1-ca14-45d4-bf87-7d4a6a0992d9	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:40:33	d27bdf40-a93f-4757-b2ae-93451b1f99eb	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:40:33	fe61196d-95ee-4f5c-9037-382ed8c23655	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:41:52	94491361-3c86-4227-bf8b-b84df203410f	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:41:53	4e9531ae-479f-4df8-be6c-0d7d2a584a95	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:41:59	91901c5b-143b-4a9f-99b2-52f096b7f91c	TypeError: Cannot read properties of undefined (reading 'className')
+20240303	18:42:57	3426799c-29d4-4406-a7b4-7efa07074b42	TypeError: Cannot read properties of undefined (reading 'name')
+20240303	18:43:38	e9e08b2c-fa57-4382-9214-9fcf181bec17	TypeError: res.JSON is not a function
+20240303	18:43:39	05488a86-a1b0-4c57-9f65-d85e5f50d5e9	TypeError: res.JSON is not a function
+20240303	18:43:39	99f81fde-0c8b-46c8-aeb4-8361388dad8d	TypeError: res.JSON is not a function
+20240303	18:43:39	9a556389-4ab6-402d-ae82-e657b0f8aba7	TypeError: res.JSON is not a function
+20240303	18:43:40	c010f13f-e06f-4fa4-9b36-a59db3925bb9	TypeError: res.JSON is not a function
+20240303	18:43:56	b09e037e-333b-4a86-8c4c-1eafbf599849	TypeError: res.JSON is not a function
+20240303	19:13:17	0bd44d2a-3300-423a-9f74-e33af785dfe1	TypeError: res.JSON is not a function
+20240303	19:13:19	b50652ab-8917-4899-ade7-d5d07505ac7a	TypeError: res.JSON is not a function
+20240303	19:13:59	8fd0debe-99d4-400b-ad1e-08c4cbc177ac	TypeError: res.JSON is not a function
+20240303	19:30:18	35080931-e2a4-4c25-acf0-4cea598de753	TypeError: classExist.addPupil is not a function
+20240303	19:35:52	573a7ac2-6756-438c-94d6-a79ccde92dd7	TypeError: classExist.addPupil is not a function
+20240303	19:35:54	c1070645-3de2-48d7-ad1d-93c0d5475385	TypeError: classExist.addPupil is not a function
+20240303	19:35:55	53c12bec-29b4-46b1-a3f5-5443ed0d6446	TypeError: classExist.addPupil is not a function
+20240303	19:37:10	fa169068-389e-438f-8374-1db2993097c8	TypeError: classExist.addPupil is not a function
+20240303	21:39:46	4e58f6e4-0cb2-4837-810d-da661f8864de	TypeError: classExist.addPupil is not a function
+20240303	21:53:56	a93a0048-d6a9-455a-8558-b1b13399adda	TypeError: classExist.addPupil is not a function
+20240303	21:53:57	5e2ad206-baa0-42c3-b76d-e34e55ccc4b5	TypeError: classExist.addPupil is not a function
+20240303	21:53:58	958d58e7-b865-4af8-80e8-62adbc1c8789	TypeError: classExist.addPupil is not a function
+20240303	21:53:58	9ebb9c50-f131-429a-a062-f5c1ad2a47c8	TypeError: classExist.addPupil is not a function
+20240303	21:53:58	20cf95ec-d031-4e1d-978b-b22a90b1f37e	TypeError: classExist.addPupil is not a function
+20240303	21:57:41	8324098c-3186-4e2c-90b4-d2f6630b9ef0	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:57:44	2fcb0fc9-e31a-47cb-8e9d-ab19d55e66fa	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:57:44	d81b716a-be93-40e3-8753-98057d76318f	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:58:02	665ccbc5-5823-49c6-b71a-50deac130972	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:58:02	d7f614c4-a684-4e85-a0ff-a7766a5d76b3	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:58:07	bef5f049-f74a-4a38-8c1b-17d2be4b7fdf	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:58:34	1214290d-1c29-44da-92e0-802efcaf19ce	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:58:34	6d1c1e9c-5078-44d5-8507-4022c86d7bee	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:59:03	54a6c04c-a629-4171-80c6-789ea2013db7	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:59:12	5dca563e-b7f6-4fd4-91c6-571c7d3bae10	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240303	21:59:13	3d73f68e-2885-4a8a-8b9d-9706994dab8b	TypeError: Cannot read properties of undefined (reading 'addPupil')
+20240305	13:36:25	9cbf47ab-f267-449a-82df-f52569dd929b	RangeError: Invalid status code: -1
+20240305	13:40:16	c349a759-6a79-43fd-ab78-24c3dee06892	ReferenceError: consoel4 is not defined
+20240305	13:41:54	1b677cfb-c93c-4cff-91ff-b47c473603ad	TypeError: saissonDB.saissons.indexof is not a function
+20240305	13:42:13	fa4d0a4c-a9d0-4519-9a5b-adab21763de6	TypeError: saissonDB.saissons.indexof is not a function
+20240305	13:42:31	90187adb-e6f3-4b82-8552-7d8ca370b329	TypeError: saissonDB.saissons.indexof is not a function
+20240327	03:50:12	6090440d-d78a-403b-8a61-d2126a2addb4	ReferenceError: token is not defined
+20240327	03:50:13	afe29eb9-d3f7-4ae7-b7bb-147c9fcd25ea	ReferenceError: token is not defined
+20240327	03:50:16	8dcd7296-ad40-4416-8145-54bb86486c1e	ReferenceError: token is not defined
+20240327	03:52:32	0039b5cb-5444-4355-aa8d-732ed8714dec	ReferenceError: sendStatus is not defined
+20240327	03:52:32	f0c9f000-5fdc-4938-8a4e-c83119411642	ReferenceError: sendStatus is not defined
+20240327	03:52:32	36e66185-5cfc-4efc-8904-726befd2ed3b	ReferenceError: sendStatus is not defined
+20240327	03:52:32	54daa190-d547-4b04-8730-c35b602295c9	ReferenceError: sendStatus is not defined
+20240327	03:52:32	aae0568b-5e8b-40f9-930b-fa322b223f19	ReferenceError: sendStatus is not defined
+20240327	03:52:35	c40d4dd2-e1d7-49db-b138-a370b7783197	ReferenceError: sendStatus is not defined
+20240327	03:52:36	e26961c1-fc78-4388-b293-baf4185f12e0	ReferenceError: sendStatus is not defined
+20240327	03:52:36	d385eb97-06b0-4b65-a1e6-51233ef41d88	ReferenceError: sendStatus is not defined
+20240327	03:52:36	bf437f91-3464-4b1c-9667-ff963e3332c2	ReferenceError: sendStatus is not defined
+20240327	03:52:36	d479cb77-3785-444f-b1ab-3e2b9557074f	ReferenceError: sendStatus is not defined
+20240327	03:52:37	b5e840f3-a5cd-48b5-bd65-b000b01cb830	ReferenceError: sendStatus is not defined
+20240327	03:52:37	9b0f6e44-7c67-4c68-9ea6-8705d8114d2b	ReferenceError: sendStatus is not defined
+20240327	03:52:37	a3f7994a-7696-4fc0-b105-d61f73ea4d16	ReferenceError: sendStatus is not defined
+20240327	03:52:37	f2992561-38e7-45f7-b7b3-eb5500bdbff3	ReferenceError: sendStatus is not defined
+20240327	03:52:53	b41ac04f-fda0-452c-a985-07928d9159fc	ReferenceError: sendStatus is not defined
+20240327	03:52:54	432471de-2cf1-4a36-9ec6-2f5cd16c6902	ReferenceError: sendStatus is not defined
+20240327	03:52:55	9fbc6e76-8fbd-4516-9d21-debab62c13db	ReferenceError: sendStatus is not defined
+20240327	03:53:32	2f638a64-c685-4855-bc07-d65f22d13927	ReferenceError: sendStatus is not defined
+20240327	03:53:33	a4dceeab-f666-431a-95c6-97af995ec4bd	ReferenceError: sendStatus is not defined
+20240328	03:50:30	6b6d7aa7-932a-4bfa-9469-8702ad7c6abc	ReferenceError: cookie is not defined
+20240328	03:50:32	85117ddf-4e82-4ff1-84a4-fae6069d8dd5	ReferenceError: cookie is not defined
+20240328	03:51:06	3502a871-dc3f-48bd-81da-5ec3218865d8	ReferenceError: cookie is not defined
+20240328	03:51:07	3249b3eb-0b0a-436b-bc0a-e425398e19b7	ReferenceError: cookie is not defined
+20240328	03:51:08	14e0f5a2-dd4e-4666-9955-913795db2187	ReferenceError: cookie is not defined
+20240328	03:51:08	6218a147-9f47-4860-9268-03ffa252defa	ReferenceError: cookie is not defined
+20240328	03:51:08	f09eb274-42b6-4053-a744-da89f4f48cc1	ReferenceError: cookie is not defined
+20240328	03:51:09	e8bf123e-6210-4b2c-9b42-865fbf4800b7	ReferenceError: cookie is not defined
+20240328	03:51:09	173979d3-7e8e-4caf-98cd-93c8b0333b05	ReferenceError: cookie is not defined
+20240328	04:15:10	15deac8b-0fcf-4067-a5ed-68fd7468b8d3	Error: Cannot set headers after they are sent to the client
+20240328	04:16:23	c2c79ad1-92db-4cfb-a0ba-ec8efef9e1d6	Error: Cannot set headers after they are sent to the client
+20240328	04:16:23	b57dcda3-7593-42ee-a531-4898151e37bd	Error: Cannot set headers after they are sent to the client
+20240329	00:58:42	5a453e2c-ab26-407a-9e8e-09813fa7005a	ReferenceError: te is not defined
+20240329	04:54:20	c80d8fa9-4355-44f3-b4b5-06278eae295f	TypeError: ApprenantModel is not a constructor
+20240329	04:56:06	f8d9391e-107a-4a9b-8690-08d4564026fd	ReferenceError: consoel is not defined
+20240329	04:56:28	750e83fa-9676-424a-a37f-0c10234b7fe8	TypeError: ApprenantModel is not a constructor
+20240329	05:07:30	e89dbc53-4a48-44da-b493-38f58f681220	MongooseError: Model.findByIdAndDelete() no longer accepts a callback
+20240329	06:06:01	00822569-2c10-4036-9dc1-4eddc50daf2c	ReferenceError: apprenantinsctance is not defined
+20240329	06:26:00	ab96f3a4-667e-4505-915f-18c66fa78286	MongooseError: Model.findById() no longer accepts a callback
+20240403	15:50:07	eeda2c6b-1ed0-4afb-a2a7-ddb0d19bc059	Error: Cannot set headers after they are sent to the client
+20240405	01:15:17	04bd6c26-ed5f-4d64-89b7-0554fa6c866b	SyntaxError: Unexpected string in JSON at position 179
+20240405	01:15:31	1ec2f0b3-784d-4bf6-800e-92ca200ce61e	SyntaxError: Unexpected token } in JSON at position 223
+20240405	01:15:44	4f99c63f-5946-4d5c-b71a-6f7ae3c08b05	Error: Cannot set headers after they are sent to the client
+20240405	01:16:49	a6b77de6-19f4-4514-a035-920520dbc29e	Error: Cannot set headers after they are sent to the client
+20240406	05:02:02	401cc2bd-076b-47f6-b782-3a1cd50228f3	ValidationError: Salle validation failed: capacite: Path `capacite` is required.
+20240406	05:03:20	a8229a8e-0bd5-4850-96ec-2e677688b63e	ValidationError: Salle validation failed: capacite: Path `capacite` is required.
+20240407	05:08:44	4c4061e1-aefa-4b96-821b-19bb9522609b	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\addpaiement.html'
+20240407	05:08:44	9ab25a8c-8cd2-4ace-88a1-66e9d0b5c440	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\addpaiement.html'
+20240410	22:30:12	e90bcf63-aa5b-4983-8267-47af95688cd6	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:13	66859991-6ba2-4c60-a616-54f888b93f87	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:23	90b16ac6-6755-4a9d-8537-437819b74a43	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:26	65137ca3-554a-4132-bffc-264706ab12fa	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:26	548660ab-5fc0-48f0-aab0-3cb5ad3e4b91	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:32	932c9673-a26e-46e8-b9cd-cceaeb21f47d	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:32	6f38ef48-e4d3-4fa8-859b-de7c1b8b85b0	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:30:40	d8d2350d-bec6-4696-bfbf-bb70ba68f18f	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:31:11	7912cd0b-088e-481c-b792-16a0ef1723ee	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240410	22:31:11	64771871-ca00-4a64-b7a8-dab041bc8606	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\ajouterFormation.html'
+20240412	08:56:15	a1c0bb46-bbad-4bf9-82a7-5d29ceb57fe1	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\group.html'
+20240412	08:56:15	04aa0484-745b-42d8-bff9-e499cc6068c9	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\group.html'
+20240413	06:22:00	c5f88e81-627f-4c70-b9de-f92fab6b43a2	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\new-page.html'
+20240413	06:22:00	00875531-dc37-455a-aedf-bfb8a9ce815c	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\new-page.html'
+20240413	06:22:34	57eb3aa2-57b5-43d3-a22d-74a6a67d19dd	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240413	06:22:34	d334c356-68ba-447b-8a5e-8b860b71d7e3	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240413	06:22:34	e03dc9b0-4f06-45c5-9b36-e5577587df1a	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240413	06:22:34	65ab3cfd-16b0-41d2-8fac-85f7d86e88ea	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240413	06:22:35	71fd77fb-e602-4701-8404-ef92a992589e	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240413	06:22:35	f2e19663-6da4-44b4-9ad8-8f0f42e1a1aa	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\home page\landingpage.html'
+20240416	10:16:36	817d7c58-3765-48ec-8da3-2dc13291e953	SyntaxError: Unexpected token { in JSON at position 4
+20240416	20:04:13	3de1cf6b-e293-4dde-aa66-fc41be3625b2	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\testpage.html'
+20240416	20:04:14	2aacf7ab-5fda-4bc8-8730-746453a04a7a	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\testpage.html'
+20240417	05:00:20	7963a968-bb44-4b4d-b78c-e7a48ae5cd18	TypeError: Cannot read properties of undefined (reading 'split')
+20240417	05:13:26	0c277287-c0dc-4f7f-9528-f62b499e08f7	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeConnection'
+    |     property 'base' -> object with constructor 'Mongoose'
+    |     property 'connections' -> object with constructor 'Array'
+    --- index 0 closes the circle
+20240417	05:13:51	a87aeaa9-ec42-4dbb-9c03-7a4a1297e8c0	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240417	05:13:52	ae0f32f4-05b2-4057-8c89-2b555a4b77af	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240417	05:14:14	3c3cc42d-b9be-40c4-88aa-bd50fb53435c	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240417	05:14:15	0f900c54-4181-4790-bde1-eb24bd2e41fe	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240417	05:14:24	2deafc88-0eca-487b-84f6-77d7dbc0d74e	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240417	05:15:24	23a27b2f-bf0d-4bb6-b796-8648b597425e	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+20240422	16:56:41	181ff617-2c69-4102-b95d-157b5602414f	SyntaxError: Unexpected string in JSON at position 204
+20240422	19:14:19	4e04a93b-fc54-47bb-9bf4-87c9919cbe41	SyntaxError: Unexpected string in JSON at position 203
+20240422	21:28:43	38325cdc-bfe0-46ab-8202-0f71e00444f4	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:47	0f20eac4-e9fc-418e-8413-35c482547da1	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:48	2b720b31-b5f5-44f9-81ac-1235c121a57d	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:49	fbacddac-4345-4e77-9bed-f2841c8ac8d1	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:49	f789bab8-0ad0-42e4-9de4-29566b36126d	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:49	d88a9c0f-80d0-4414-b968-a8577f75d3d3	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:49	78e967c9-2416-446c-96c6-0fdaa6850467	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:49	e2566d0a-6b8a-4294-969f-99d35c59e26d	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:50	80a3bb98-a0db-4033-ab2d-fb515106aa10	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:50	f23d3b44-6c93-40a3-b557-02abf30f13e5	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:50	868a650a-31be-4eb1-859b-0617093896ab	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:28:52	97185fa4-4cd8-4547-b22f-6ba7860aa883	TypeError: Cannot read properties of undefined (reading 'role')
+20240422	21:34:50	e88111d9-c096-49fc-ab21-ba67a9bbd612	Error: Cannot set headers after they are sent to the client
+20240423	18:26:03	5025695a-b431-48b8-bb24-e7b041536c7f	Error: Cannot set headers after they are sent to the client
+20240423	20:06:13	db1c470f-f016-4117-b2b1-15743e35be8a	Error: Cannot set headers after they are sent to the client
+20240423	20:07:16	19ea4a9f-ae46-4408-8360-38ed41676485	Error: Cannot set headers after they are sent to the client
+20240423	20:14:54	00cb217d-be43-40eb-bbfc-1295f2d30fdb	Error: Cannot set headers after they are sent to the client
+20240423	20:14:58	1d9abb53-efa3-4c7e-a6bc-ffc776a44c29	Error: Cannot set headers after they are sent to the client
+20240423	20:16:21	2c3e3215-e960-4885-88c1-a2a82c0b57c4	Error: Cannot set headers after they are sent to the client
+20240424	00:05:55	9c0b0bc1-b9e1-4f2d-8f41-7e64d83f1ea4	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\seancepage.html'
+20240424	00:05:55	07134457-57d8-49eb-a061-a32ae4c575db	Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Desktop\E-LEARN backend\views\seancepage.html'
+20240427	22:30:51	88d93730-959a-483c-bbd2-e99e59aeefef	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:33:35	db5182c0-94a7-4e28-b354-efe3baa4d28c	Error: Cannot set headers after they are sent to the client
+20240427	22:33:54	0f5e7a5e-db04-4122-a93b-b9d06b0123c7	Error: Cannot set headers after they are sent to the client
+20240427	22:33:55	10bae0b1-21e4-4a3a-b6a1-8962b526d6d4	Error: Cannot set headers after they are sent to the client
+20240427	22:33:55	0c51504f-053f-40a4-97a7-4df82856ee7f	Error: Cannot set headers after they are sent to the client
+20240427	22:33:55	e71061ac-12a1-47b2-b81e-d40159b3f2ed	Error: Cannot set headers after they are sent to the client
+20240427	22:33:56	13303303-93fa-4d6b-8f70-27099cd7b402	Error: Cannot set headers after they are sent to the client
+20240427	22:34:23	412ea013-d13d-4cfc-8ecc-a486ce0fcab0	Error: Cannot set headers after they are sent to the client
+20240427	22:34:24	241ec3cb-d4cd-4ca1-8cde-57ee444d522b	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	8c09c2ec-758c-405e-919d-5f593daae7dd	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	41316196-ba7e-4df4-b136-4df54d765dec	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	9db8adc6-e958-46f1-8b3d-f97f6257cef7	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	4a911df9-d3cc-4611-9759-17138c75525f	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	5c72164f-cf55-4e7c-afa4-fdd00f2aa89f	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	a1786eff-548f-47e5-a1ec-72d32957edc6	Error: Cannot set headers after they are sent to the client
+20240427	22:34:25	9c756371-9392-4545-891b-941e30ad62de	Error: Cannot set headers after they are sent to the client
+20240427	22:34:26	3b58a556-916a-43b2-97b0-0038963b9c96	Error: Cannot set headers after they are sent to the client
+20240427	22:34:26	5ecf997e-88b8-4b8d-bdeb-841ccea432c3	Error: Cannot set headers after they are sent to the client
+20240427	22:34:26	f81fa3cd-0d08-4ace-b701-b62a9410ceed	Error: Cannot set headers after they are sent to the client
+20240427	22:34:26	5b0a8a08-4fab-4299-8140-2de04f56d693	Error: Cannot set headers after they are sent to the client
+20240427	22:34:26	3da9f253-6dc1-4ab2-96a2-73e181d1ee93	Error: Cannot set headers after they are sent to the client
+20240427	22:34:40	f5471443-1cb8-4033-81b3-1df62e4d8060	Error: Cannot set headers after they are sent to the client
+20240427	22:34:47	a9cf10fd-02fb-4d8e-9cd8-00db59b3829e	Error: Cannot set headers after they are sent to the client
+20240427	22:34:47	ba33da68-141b-42e2-a158-f52256504cd2	Error: Cannot set headers after they are sent to the client
+20240427	22:34:47	84edf00e-3008-4e03-be4f-e4d82028f5c5	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	ec4a4d71-f302-47db-97e5-adf77c6e7077	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	3cbd8497-b2b4-462d-97a1-10930c2191c9	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	e875903e-3e7d-4f9a-a476-68ec69f23f46	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	00d4ea7c-3b8f-4a60-b4bb-5e94165d1e36	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	b274a703-37b2-48b1-ad1c-6542ff93988b	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	4f421d9a-f5d5-4154-a5fa-109527647c10	Error: Cannot set headers after they are sent to the client
+20240427	22:34:48	ca3e1dea-7d8b-4bc0-9998-7260ca3574b1	Error: Cannot set headers after they are sent to the client
+20240427	22:34:49	556e6753-66fa-4f94-9844-ba4a40f3a7a5	Error: Cannot set headers after they are sent to the client
+20240427	22:34:49	c29eee48-89bf-41ba-842b-f9667fdafb44	Error: Cannot set headers after they are sent to the client
+20240427	22:34:49	4f1b7b4b-78a5-4802-a9db-1ab942fc3f8b	Error: Cannot set headers after they are sent to the client
+20240427	22:35:08	461b1845-8687-4d5b-8bf4-a99fea22615f	Error: Cannot set headers after they are sent to the client
+20240427	22:46:32	1356f351-44db-425e-a6d2-43e7382531e9	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:35	40aa259e-4d6c-41af-8b76-0b0a3023fd17	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:36	1a1cd0d6-e72d-4bfe-bc8c-d3437bfcea38	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:36	4534527e-3a8e-4627-998e-38933410eaea	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:36	defaf850-a07d-458f-999e-ad387642a7e3	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:37	979f6f6b-b3d9-4377-b7f2-e7ce41e2d3c2	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:37	17596db3-a558-44e3-85d0-ff2b6310f8b6	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:46:37	43fe7551-b055-4ccc-b9db-689ef1d8b407	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:07	00b8380d-fbfc-4c10-a358-0c1def342a65	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:08	f56c99f2-fbac-4fcc-940f-dc4f05b7032e	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:08	c6c249b7-a38e-4891-9b62-37fd212069f4	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:08	9eba35ca-4177-449c-a6a6-50ce3d30d556	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:08	bbf24582-dcf1-4c36-a7e8-8760b1705b6f	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:08	7d9741fc-b437-48ab-bd93-9d6ce7c7c03f	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:09	a557a107-8524-4025-ba0e-f4e3c04f2589	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:09	a15e7414-1fe2-4aa1-af18-f746a1e4240d	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:49:45	a5e3e05a-d6a8-4866-ac21-c078cff91207	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:50:53	59376438-fdbf-438a-ae65-f6eaaad19ba3	TypeError: Cannot set properties of undefined (setting '_id')
+20240427	22:52:15	3ce3206c-8077-4c1e-b017-508ae63fe13c	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:52:17	8f3217ba-6844-4625-8f61-ed643a459538	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:52:59	e7a0350c-b5c7-418e-912d-85d59142fdc2	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:52:59	c2f96f44-e991-44c4-ac6b-109ea6e870f3	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:52:59	c09d388f-b703-4216-81ae-50fcd168623a	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:00	5d64c222-0b94-46be-8c2e-5e9c306290ed	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:00	8af79e9e-b87c-48f8-92d3-bfcb0c56dedf	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:00	e3daf7f7-d531-400b-bb0a-d8eef5bfb630	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:00	35b72766-00a5-4982-8a5a-b199c3994256	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:05	f18f3cf3-7550-47b7-8773-87d136cfa9e6	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:06	a0454064-ef18-4d5c-b82e-27e5f4e7f2fa	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:53:06	dadd0e85-fb36-4343-ad46-cae9e023a051	TypeError: Cannot set properties of undefined (setting 'email')
+20240427	22:54:17	809f0e5f-daac-4ea0-b059-ba1d63959428	Error: Cannot set headers after they are sent to the client
+20240427	22:54:18	4ae007d6-17fa-4d52-9c57-f596e0b5af3e	Error: Cannot set headers after they are sent to the client
+20240427	22:54:20	34c421ac-8c5a-4fad-bdd3-671268f15660	Error: Cannot set headers after they are sent to the client
+20240427	22:54:20	527aae97-301b-4a14-89c3-cf06924fcda0	Error: Cannot set headers after they are sent to the client
+20240427	22:54:20	d5842c2f-810d-4536-b439-60df7e55193e	Error: Cannot set headers after they are sent to the client
+20240427	22:54:20	b77f3de0-b6fb-478d-b329-ff0df8ee66cf	Error: Cannot set headers after they are sent to the client
+20240427	22:54:20	96c8e04b-fdfb-43b3-8ebc-8b1a5b452dd1	Error: Cannot set headers after they are sent to the client
+20240427	22:54:21	d6ab3dd1-131e-42bb-8047-b5f257a2b5a4	Error: Cannot set headers after they are sent to the client
+20240427	22:55:34	65df219f-70b4-45e1-a1d8-63382717a89a	Error: Cannot set headers after they are sent to the client
+20240427	22:57:13	8eb6c448-9629-4871-82b9-688923ddef5d	Error: Cannot set headers after they are sent to the client
+20240503	14:53:35	e664aa94-0394-4f5b-a0fc-4ae8ae5008f4	SyntaxError: Unexpected token } in JSON at position 237
+20240504	22:01:09	50421276-1984-4580-812c-e3b63a7aaca0	SyntaxError: Unexpected token " in JSON at position 0
+20240504	22:01:14	bbd1f508-e618-4626-87d7-5034a42ef943	SyntaxError: Unexpected token " in JSON at position 0
+20240504	22:01:14	d4c7d953-6233-4ee6-a259-e72e226f0953	SyntaxError: Unexpected token " in JSON at position 0
+20240504	22:01:14	b4b3deae-8357-4f72-8602-8364ef7862da	SyntaxError: Unexpected token " in JSON at position 0
+20240504	22:01:14	499a1798-5bd8-4ff7-967b-48d69ec1a5a9	SyntaxError: Unexpected token " in JSON at position 0
+20240504	22:01:35	575ff7e0-dc39-4348-9862-80be94687bb1	SyntaxError: Unexpected token " in JSON at position 0
+20240505	02:05:47	86391bae-80d2-4889-9d37-a4a8b9ae7a03	Error: ENOENT: no such file or directory, open 'C:\Users\pc\Desktop\E-LEARN backend\uploads\cv-1714871147003.pdf'
+20240505	22:46:20	219397da-2eb1-44e4-abe4-ac2209d0a244	MulterError: Unexpected field
+20240505	23:08:37	932709c8-0ff0-4aa1-91b2-a2cdc9cd403f	MulterError: Unexpected field
+20240505	23:09:18	1146e22a-8037-4bf2-8e70-c2f387781698	TypeError: Cannot read properties of undefined (reading 'log')
+20240506	01:11:32	f42780a0-fbe7-401c-9d8d-ae88b8b8951c	SyntaxError: Unexpected token { in JSON at position 104
+20240511	00:24:07	ddd48512-70c9-493a-810f-0dabf9c57cfd	SyntaxError: Unexpected token } in JSON at position 161

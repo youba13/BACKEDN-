@@ -1,0 +1,11 @@
+const express = require("express")
+const router = express.Router()
+const { createSalle, getAllSalle, getOneSalle, deleteSalle, updateSalle } = require("../../controllers/salleController")
+router.route('/')
+    .post(createSalle)
+    .get(getAllSalle)
+router.route('/:id')
+    .get(getOneSalle)
+    .delete(deleteSalle)
+    .put(updateSalle)     
+module.exports = router     
